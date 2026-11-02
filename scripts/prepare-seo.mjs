@@ -18,5 +18,5 @@ ${base?`<meta property="og:url" content="${base}/" /><link rel="canonical" href=
 <!-- seo-end -->`;
 fs.writeFileSync('index.html',html.replace('</head>',tags+'\n</head>'));
 fs.writeFileSync('public/robots.txt','User-agent: *\nAllow: /\nDisallow: /admin\n'+(base?'Sitemap: '+base+'/sitemap.xml\n':''));
-if(base){fs.writeFileSync('public/sitemap.xml','<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+['/','/menu','/gallery'].map(path=>'<url><loc>'+base+path+'</loc></url>').join('')+'</urlset>');}else if(fs.existsSync('public/sitemap.xml'))fs.unlinkSync('public/sitemap.xml');
+if(base){fs.writeFileSync('public/sitemap.xml','<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+['/','/menu','/gallery','/videos'].map(path=>'<url><loc>'+base+path+'</loc></url>').join('')+'</urlset>');}else if(fs.existsSync('public/sitemap.xml'))fs.unlinkSync('public/sitemap.xml');
 console.log(base?'SEO: '+base:'SEO: domen hali berilmagan; canonical/sitemap qo‘shilmadi.');

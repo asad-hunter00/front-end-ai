@@ -3,7 +3,7 @@ import { useLocation } from "react-router-dom";
 import { usePreferences } from "../i18n";
 export function RouteEffects() {
   const location = useLocation();
-  const { t } = usePreferences();
+  const { t, lang } = usePreferences();
   useLayoutEffect(() => {
     const scroll = () => {
       const target = location.hash
@@ -33,7 +33,7 @@ export function RouteEffects() {
   }, [location.pathname, location.hash, location.key]);
   useEffect(() => {
     const name =
-      location.pathname === "/menu"
+      location.pathname === "/videos" ? ({uz:"Videolar",ru:"Видео",en:"Videos"}[lang]) : location.pathname === "/menu"
         ? t.menuTitle
         : location.pathname === "/gallery"
           ? t.galleryTitle
@@ -41,7 +41,7 @@ export function RouteEffects() {
             ? t.nav[0]
             : t.notFound;
     document.title = `${name} | ${t.brand}`;
-  }, [location.pathname, t]);
+  }, [location.pathname, t, lang]);
   useEffect(() => {
     if (!("IntersectionObserver" in window)) return;
     const observer = new IntersectionObserver(

@@ -89,7 +89,7 @@ export function Header() {
               {t.nav[i]}
             </Link>
           ))}
-        </nav>
+        <Link to="/videos" onClick={()=>setOpen(false)}>{lang==='uz'?'Videolar':lang==='ru'?'Видео':'Videos'}</Link></nav>
         <Preferences />
         <button
           className="menu-toggle"
@@ -111,7 +111,7 @@ export function Header() {
             {t.nav[i]}
           </Link>
         ))}
-      </nav>
+      <Link to="/videos" onClick={()=>setOpen(false)}>{lang==='uz'?'Videolar':lang==='ru'?'Видео':'Videos'}</Link></nav>
     </header>
   );
 }
