@@ -35,7 +35,10 @@ export function HomePage({
             <h1>{t.heroTitle}</h1>
             <p>{t.heroText}</p>
             <div className="hero-actions">
-              <a className="button primary" href={`tel:${content.settings.phones[0].replace(/[^+\d]/g, "")}`}>
+              <a
+                className="button primary"
+                href={`tel:${content.settings.phones[0].replace(/[^+\d]/g, "")}`}
+              >
                 <Icon name="phone" />
                 {t.call}
               </a>
@@ -46,7 +49,6 @@ export function HomePage({
             </div>
           </div>
         </div>
-        <p className="image-note">{t.decorative}</p>
       </section>
       <div className="stats">
         {t.stats.map((s, i) => (
@@ -80,7 +82,15 @@ export function HomePage({
       <Together />
       <Rooms rooms={content.rooms} />
       <Menu items={content.menu ?? menuItems} />
-      {(content.menu ?? menuItems).some(item => item.id === "achchiq-chuchuk") && <SaladSpotlight item={(content.menu??menuItems).find(i=>i.id==='achchiq-chuchuk')!}/>}
+      {(content.menu ?? menuItems).some(
+        (item) => item.id === "achchiq-chuchuk",
+      ) && (
+        <SaladSpotlight
+          item={
+            (content.menu ?? menuItems).find((i) => i.id === "achchiq-chuchuk")!
+          }
+        />
+      )}
       <Gallery images={content.gallery} />
       <Announcements items={content.announcements} />
       <VisitGuide />
