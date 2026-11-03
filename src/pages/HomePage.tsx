@@ -24,7 +24,7 @@ export function HomePage({
       <section id="bosh" className="hero">
         <img
           className="hero-image"
-          src="/images/tea-hero.webp"
+          src="/images/shashlik-hero.png"
           alt=""
           fetchPriority="high"
         />
