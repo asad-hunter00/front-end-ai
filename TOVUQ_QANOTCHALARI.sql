@@ -1,0 +1,4 @@
+-- Frontendni joylagandan keyin Supabase SQL Editor orqali bir marta bajaring.
+INSERT INTO public.menu_items (id, name, category, description, meat, portion, price, price_unit, image_url, image_fit, is_published, sort_order)
+VALUES ('tovuq-qanotchalari', '{"uz": "Tovuq qanotchalari shashlik", "ru": "Шашлык из куриных крылышек", "en": "Chicken wing shashlik"}'::jsonb, '{"uz": "Donalik shashliklar", "ru": "Поштучные шашлыки", "en": "Shashlik by the skewer"}'::jsonb, '{"uz": "Tovuq qanotchalaridan tayyorlangan shashlik. Narx 1 dona uchun.", "ru": "Шашлык из куриных крылышек. Цена за 1 штуку.", "en": "Shashlik made with chicken wings. Price per piece."}'::jsonb, '{"uz": "Tovuq qanotchalari", "ru": "Куриные крылышки", "en": "Chicken wings"}'::jsonb, '{"uz": "1 dona", "ru": "1 шт.", "en": "1 piece"}'::jsonb, 18000, 'piece', '/images/menu/tovuq-qanotchalari.png', 'contain', true, 9)
+ON CONFLICT (id) DO NOTHING;

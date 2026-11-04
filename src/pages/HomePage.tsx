@@ -8,6 +8,7 @@ import {
   Contact,
   FAQ,
 } from "../components/Sections";
+import { confirmedLocation } from "../data/location";
 import { menuItems } from "../data/content";
 import type { SiteContent } from "../types";
 import { usePreferences } from "../i18n";
@@ -21,6 +22,19 @@ export function HomePage({
   const { t, lang } = usePreferences();
   return (
     <>
+      <aside className="quick-location" aria-label={{uz:"Choyxona manzili",ru:"Адрес чайханы",en:"Teahouse location"}[lang]}>
+        <div className="quick-location-inner">
+          <div className="quick-location-copy">
+            <Icon name="pin" />
+            <div><strong>{{uz:"Bizni oson toping",ru:"Как нас найти",en:"Find us easily"}[lang]}</strong>
+              <span>{{uz:"Jizzax, Sarvar Azimov ko‘chasi, 47",ru:"Джизак, улица Сарвара Азимова, 47",en:"47 Sarvar Azimov Street, Jizzakh"}[lang]}</span>
+            </div>
+          </div>
+          <a className="button primary" href={confirmedLocation.mapUrl} target="_blank" rel="noopener noreferrer">
+            <Icon name="pin" />{{uz:"Manzil — xaritada ochish",ru:"Открыть на карте",en:"Open location in Maps"}[lang]}<Icon name="arrow" />
+          </a>
+        </div>
+      </aside>
       <section id="bosh" className="hero">
         <img
           className="hero-image"

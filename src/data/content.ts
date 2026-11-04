@@ -355,6 +355,39 @@ export const menuItems: MenuItem[] = [
   },
 
   {
+  "id": "tovuq-qanotchalari",
+  "name": {
+    "uz": "Tovuq qanotchalari shashlik",
+    "ru": "Шашлык из куриных крылышек",
+    "en": "Chicken wing shashlik"
+  },
+  "category": {
+    "uz": "Donalik shashliklar",
+    "ru": "Поштучные шашлыки",
+    "en": "Shashlik by the skewer"
+  },
+  "description": {
+    "uz": "Tovuq qanotchalaridan tayyorlangan shashlik. Narx 1 dona uchun.",
+    "ru": "Шашлык из куриных крылышек. Цена за 1 штуку.",
+    "en": "Shashlik made with chicken wings. Price per piece."
+  },
+  "meat": {
+    "uz": "Tovuq qanotchalari",
+    "ru": "Куриные крылышки",
+    "en": "Chicken wings"
+  },
+  "price": 18000,
+  "portion": {
+    "uz": "1 dona",
+    "ru": "1 шт.",
+    "en": "1 piece"
+  },
+  "image": "/images/menu/tovuq-qanotchalari.png",
+  "imageFit": "contain",
+  "reviews": []
+},
+
+  {
     id: "qiyma",
     name: {
       uz: "Qiyma shashlik",
