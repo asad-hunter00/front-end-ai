@@ -1,6 +1,11 @@
 import {apiRequest} from './admin';
 export interface VideoRow {id:string;title:{uz:string;ru:string;en:string};description:{uz:string;ru:string;en:string};signed_url?:string;is_published:boolean;sort_order:number;created_at:string;updated_at:string;}
-export const videoDate=(date:string,lang='uz')=>new Intl.DateTimeFormat(lang==='uz'?'uz-UZ':lang==='ru'?'ru-RU':'en-GB',{dateStyle:'medium',timeStyle:'short',timeZone:'Asia/Tashkent'}).format(new Date(date));
+export const videoDate=(date:string,_lang='uz')=>{
+ const d=new Date(date);if(Number.isNaN(d.getTime()))return '—';
+ const parts=new Intl.DateTimeFormat('en-GB',{day:'2-digit',month:'2-digit',year:'numeric',hour:'2-digit',minute:'2-digit',hourCycle:'h23',timeZone:'Asia/Tashkent'}).formatToParts(d);
+ const get=(type:string)=>parts.find(p=>p.type===type)?.value||'';
+ return `${get('day')}.${get('month')}.${get('year')}, ${get('hour')}:${get('minute')}`;
+};
 export async function uploadVideo(file:File,token:string,onProgress:(percent:number)=>void){
  if(file.type!=='video/mp4'||file.size<=0||file.size>52428800)throw new Error('MP4 video tanlang, maksimal 50 MB');
  const ticket=await apiRequest<{id:string;signed_url:string}>('videos/upload-url',{method:'POST',token,body:{mime_type:'video/mp4',file_size:file.size}});

@@ -35,7 +35,7 @@ export function MenuPage({ items }: { items: MenuItem[] }) {
             {Array.from(categories).map(([key,label]) => <button key={key} aria-pressed={!onlySaved && category === key} onClick={() => {setCategory(key);setOnlySaved(false);}}>{label}</button>)}
             <button aria-pressed={onlySaved} onClick={() => {setOnlySaved(!onlySaved);setCategory("all");}}>♡ {c.favorites} ({saved.length})</button>
           </div>
-          <div className="menu-tools">
+          <div className="menu-tools menu-tools-search-only">
             <label>
               {t.searchMenu}
               <input
@@ -45,21 +45,7 @@ export function MenuPage({ items }: { items: MenuItem[] }) {
                 onChange={(e) => setQuery(e.target.value)}
               />
             </label>
-            <label>
-              {t.category}
-              <select
-                aria-label={t.category}
-                value={category}
-                onChange={(e) => setCategory(e.target.value)}
-              >
-                <option value="all">{t.allCategories}</option>
-                {Array.from(categories).map(([key, label]) => (
-                  <option key={key} value={key}>
-                    {label}
-                  </option>
-                ))}
-              </select>
-            </label>
+
           </div>
           {categories.size === 1 && categories.has(UNCATEGORIZED) && (
             <p className="catalog-note">{t.categoriesPending}</p>

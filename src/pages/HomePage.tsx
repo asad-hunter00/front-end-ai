@@ -1,5 +1,5 @@
-import { Together, SaladSpotlight, VisitGuide } from "../components/Experience";
-import { Icon, RoomDrawing } from "../components/Icon";
+import { SaladSpotlight } from "../components/Experience";
+import { Icon } from "../components/Icon";
 import {
   Rooms,
   Menu,
@@ -73,19 +73,12 @@ export function HomePage({
           </div>
         ))}
       </div>
-      <section id="haqimizda" className="section about">
+      <section id="haqimizda" className="section about about-compact">
         <div className="about-copy">
-          <h2>{t.aboutTitle}</h2>
-          <p>{content.settings.descriptionLocalized?.[lang] || t.aboutText}</p>
-          <p>{t.aboutText2}</p>
-          <a className="button outline" href="#xonalar">
-            {t.more}
-            <Icon name="arrow" />
-          </a>
-        </div>
-        <div className="about-drawing">
-          <div className="circle" />
-          <RoomDrawing />
+          <span className="eyebrow">{t.aboutTitle}</span>
+          <h2>{{uz:"Bir dasturxon atrofida",ru:"За одним столом",en:"Around one table"}[lang]}</h2>
+          <p>{{uz:"O‘ktam bobo — Jizzaxda oilaviy tushlik, do‘stlar uchrashuvi va yaqinlar davrasi uchun choyxona. Taomlarni menyudan tanlang, manzilni xaritada oching va biznikiga keling.",ru:"O‘ktam bobo — чайхана в Джизаке для семейного обеда и встреч с друзьями. Выберите блюда в меню, откройте адрес на карте и приходите к нам.",en:"O‘ktam Bobo is a teahouse in Jizzakh for family lunches and gatherings with friends. Browse the menu, find us on the map and join us."}[lang]}</p>
+          <a className="button outline" href="/menu">{t.menuTitle}<Icon name="arrow" /></a>
         </div>
       </section>
       {status !== "idle" && (
@@ -93,7 +86,6 @@ export function HomePage({
           {status === "loading" ? t.loading : t.error}
         </p>
       )}
-      <Together />
       <Rooms rooms={content.rooms} />
       <Menu items={content.menu ?? menuItems} />
       {(content.menu ?? menuItems).some(
@@ -107,7 +99,6 @@ export function HomePage({
       )}
       <Gallery images={content.gallery} />
       <Announcements items={content.announcements} />
-      <VisitGuide />
       <FAQ />
       <Contact />
     </>

@@ -2,7 +2,7 @@ import { confirmedLocation } from "./location";
 import type { SiteContent, MenuItem } from "../types";
 export const initialContent: SiteContent = {
   settings: {
-    name: "O‘ktam ota choyxonasi",
+    name: "O‘ktam bobo choyxonasi",
     ...confirmedLocation,
     addressLocalized: {
       uz: confirmedLocation.address,
@@ -113,11 +113,7 @@ export const menuItems: MenuItem[] = [
       ru: "Баранина",
       en: "Lamb",
     },
-    description: {
-      uz: "Qo‘y go‘shti asosidagi shashlik. Marinad, ziravorlar va porsiya haqida xodimdan aniqlashtiring.",
-      ru: "Шашлык: баранина. Маринад, специи и размер порции уточните у сотрудника.",
-      en: "Shashlik made with lamb. Ask our team about the marinade, spices and portion size.",
-    },
+    description: {"uz": "Qo‘y go‘shtidan donalik shashlik. Qo‘y go‘shtini yoqtiradiganlar uchun.", "ru": "Поштучный шашлык из баранины — для любителей этого мяса.", "en": "Lamb shashlik, priced by the skewer."},
     price: 40000,
     portion: {
       uz: "1 dona",
@@ -144,11 +140,7 @@ export const menuItems: MenuItem[] = [
       ru: "Говядина",
       en: "Beef",
     },
-    description: {
-      uz: "Mol go‘shti asosidagi shashlik. Marinad, ziravorlar va porsiya haqida xodimdan aniqlashtiring.",
-      ru: "Шашлык: говядина. Маринад, специи и размер порции уточните у сотрудника.",
-      en: "Shashlik made with beef. Ask our team about the marinade, spices and portion size.",
-    },
+    description: {"uz": "Mol go‘shtidan donalik shashlik. Dasturxon uchun go‘shtli tanlov.", "ru": "Поштучный шашлык из говядины для вашего стола.", "en": "Beef shashlik, priced by the skewer."},
     price: 40000,
     portion: {
       uz: "1 dona",
@@ -170,11 +162,7 @@ export const menuItems: MenuItem[] = [
       en: "Shashlik by the skewer",
     },
     reviews: [],
-    description: {
-      uz: "Shashlik menyusidagi alohida variant. Go‘sht turi, tarkibi va porsiyasini xodimdan aniqlashtiring.",
-      ru: "Отдельный вариант в меню шашлыков. Вид мяса, состав и порцию уточните у сотрудника.",
-      en: "A distinct option from the shashlik menu. Ask our team about the meat, ingredients and portion.",
-    },
+    description: {"uz": "Keskis — donalik shashliklarimizdan biri. Boshqa turlar bilan birga tanlab ko‘ring.", "ru": "«Кескис» — один из наших поштучных шашлыков. Можно выбрать вместе с другими видами.", "en": "Keskis is one of our individual shashlik options. Try it alongside another selection."},
     price: 40000,
     portion: {
       uz: "1 dona",
@@ -196,11 +184,7 @@ export const menuItems: MenuItem[] = [
       en: "Shashlik by the skewer",
     },
     reviews: [],
-    description: {
-      uz: "Shashlik menyusidagi alohida variant. Go‘sht turi, tarkibi va porsiyasini xodimdan aniqlashtiring.",
-      ru: "Отдельный вариант в меню шашлыков. Вид мяса, состав и порцию уточните у сотрудника.",
-      en: "A distinct option from the shashlik menu. Ask our team about the meat, ingredients and portion.",
-    },
+    description: {"uz": "Koska rulet — shashlik menyusidagi rulet varianti. Narx 1 dona uchun.", "ru": "«Коска-рулет» — вариант рулета в нашем меню шашлыков. Цена за штуку.", "en": "Koska roll is a roll-style option from our shashlik menu. Priced per piece."},
     price: 40000,
     portion: {
       uz: "1 dona",
@@ -227,11 +211,7 @@ export const menuItems: MenuItem[] = [
       ru: "Баранина",
       en: "Lamb",
     },
-    description: {
-      uz: "Qo‘y go‘shti asosidagi shashlik. Marinad, ziravorlar va porsiya haqida xodimdan aniqlashtiring.",
-      ru: "Шашлык: баранина. Маринад, специи и размер порции уточните у сотрудника.",
-      en: "Shashlik made with lamb. Ask our team about the marinade, spices and portion size.",
-    },
+    description: {"uz": "Qo‘y biqinidan tayyorlanadigan shashlik. Narx 1 dona uchun.", "ru": "Шашлык из бараньего бока. Цена за штуку.", "en": "Shashlik made from lamb flank. Priced per piece."},
     price: 55000,
     portion: {
       uz: "1 dona",
@@ -253,11 +233,7 @@ export const menuItems: MenuItem[] = [
       en: "Shashlik by the skewer",
     },
     reviews: [],
-    description: {
-      uz: "Shashlik menyusidagi alohida variant. Go‘sht turi, tarkibi va porsiyasini xodimdan aniqlashtiring.",
-      ru: "Отдельный вариант в меню шашлыков. Вид мяса, состав и порцию уточните у сотрудника.",
-      en: "A distinct option from the shashlik menu. Ask our team about the meat, ingredients and portion.",
-    },
+    description: {"uz": "Bomba — donalik shashliklar menyusidagi alohida tanlov. Narx 1 dona uchun.", "ru": "«Бомба» — отдельный вариант в меню поштучных шашлыков. Цена за штуку.", "en": "Bomba is a distinct option in our individual shashlik selection. Priced per piece."},
     price: 40000,
     portion: {
       uz: "1 dona",
@@ -279,11 +255,7 @@ export const menuItems: MenuItem[] = [
       en: "Shashlik by the skewer",
     },
     reviews: [],
-    description: {
-      uz: "Shashlik menyusidagi alohida variant. Go‘sht turi, tarkibi va porsiyasini xodimdan aniqlashtiring.",
-      ru: "Отдельный вариант в меню шашлыков. Вид мяса, состав и порцию уточните у сотрудника.",
-      en: "A distinct option from the shashlik menu. Ask our team about the meat, ingredients and portion.",
-    },
+    description: {"uz": "Rulet shashlik — rulet ko‘rinishidagi donalik tanlov.", "ru": "Шашлык-рулет — поштучный вариант в форме рулета.", "en": "Roll shashlik, served as an individual piece."},
     price: 40000,
     portion: {
       uz: "1 dona",
@@ -310,11 +282,7 @@ export const menuItems: MenuItem[] = [
       ru: "Баранья печень",
       en: "Lamb liver",
     },
-    description: {
-      uz: "Qo‘y jigari asosidagi shashlik. Marinad, ziravorlar va porsiya haqida xodimdan aniqlashtiring.",
-      ru: "Шашлык: баранья печень. Маринад, специи и размер порции уточните у сотрудника.",
-      en: "Shashlik made with lamb liver. Ask our team about the marinade, spices and portion size.",
-    },
+    description: {"uz": "Qo‘y jigaridan tayyorlangan shashlik. Jigar taomlarini yoqtiradiganlar uchun.", "ru": "Шашлык из бараньей печени — для любителей блюд из печени.", "en": "Lamb liver shashlik for those who enjoy liver dishes."},
     price: 28000,
     portion: {
       uz: "1 dona",
@@ -341,11 +309,7 @@ export const menuItems: MenuItem[] = [
       ru: "Курица",
       en: "Chicken",
     },
-    description: {
-      uz: "Tovuq go‘shti asosidagi shashlik. Marinad, ziravorlar va porsiya haqida xodimdan aniqlashtiring.",
-      ru: "Шашлык: курица. Маринад, специи и размер порции уточните у сотрудника.",
-      en: "Shashlik made with chicken. Ask our team about the marinade, spices and portion size.",
-    },
+    description: {"uz": "Tovuq go‘shtidan tayyorlangan donalik shashlik.", "ru": "Поштучный шашлык из куриного мяса.", "en": "Chicken shashlik, priced by the skewer."},
     price: 18000,
     portion: {
       uz: "1 dona",
@@ -405,11 +369,7 @@ export const menuItems: MenuItem[] = [
       ru: "1 шт.",
       en: "1 skewer",
     },
-    description: {
-      uz: "Qiyma asosidagi shashlik. Go‘sht turi va qo‘shimchalarini xodimdan aniqlashtiring.",
-      ru: "Шашлык из фарша. Вид мяса и добавки уточните у сотрудника.",
-      en: "Minced meat shashlik. Ask our staff about the meat type and additions.",
-    },
+    description: {"uz": "Qiymadan tayyorlangan shashlik. Donalik va kiloli variantlari menyuda alohida ko‘rsatilgan.", "ru": "Шашлык из фарша. Поштучный вариант и вариант на килограмм указаны отдельно.", "en": "Minced meat shashlik. Individual and kilogram options are listed separately."},
     image: "/images/menu/qiyma.webp",
     reviews: [],
   },
@@ -571,11 +531,9 @@ export const menuItems: MenuItem[] = [
     },
     image: "/images/menu/shorva.webp",
     imageFit: "cover",
-    description: {
-      uz: "Qozonda tayyorlanadigan issiq sho‘rva. Tarkibi va porsiyasini xodimdan aniqlashtiring.",
-      ru: "Горячая шурпа в казане. Состав и размер порции уточните у сотрудника.",
-      en: "Hot shurpa cooked in a kazan. Ask staff about ingredients and portion size.",
-    },
+    description: {"uz": "Issiq sho‘rva — bir kosa uchun 40 000 so‘m.", "ru": "Горячая шурпа — 40 000 сум за одну косу (пиалу).", "en": "Hot shurpa soup — 40,000 UZS per bowl."},
+    price: 40000,
+    portion: {uz:"1 kosa",ru:"1 коса",en:"1 bowl"},
     reviews: [],
   },
   {

@@ -1,3 +1,4 @@
+import {VideoPreview} from "../components/VideoPreview";
 import { useEffect, useState, type FormEvent } from "react";
 import { useAdminAuth } from "./Auth";
 import { apiRequest } from "../services/admin";
@@ -272,22 +273,7 @@ export function AdminVideos() {
                 <p>Qo‘shilgan: {videoDate(row.created_at)}</p>
                 <p>O‘zgartirilgan: {videoDate(row.updated_at)}</p>
 
-                <video
-                  controls
-                  playsInline
-                  preload="metadata"
-                  src={row.signed_url}
-                  aria-label={row.title.uz}
-                  style={{
-                    display: "block",
-                    width: "100%",
-                    maxWidth: 640,
-                    maxHeight: 320,
-                    marginTop: 16,
-                    borderRadius: 12,
-                    background: "#0c211b",
-                  }}
-                />
+                <VideoPreview src={row.signed_url} title={row.title.uz}/>
               </div>
 
               <div className="admin-record-actions">

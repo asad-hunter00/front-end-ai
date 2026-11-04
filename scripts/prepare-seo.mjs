@@ -7,8 +7,8 @@ const image=base+'/social-preview.jpg';
 const tags=`<!-- seo-generated -->
 <meta property="og:type" content="website" />
 <meta property="og:locale" content="uz_UZ" />
-<meta property="og:site_name" content="O‘ktam ota choyxonasi" />
-<meta property="og:title" content="O‘ktam ota choyxonasi — menyu va manzil" />
+<meta property="og:site_name" content="O‘ktam bobo choyxonasi" />
+<meta property="og:title" content="O‘ktam bobo choyxonasi — menyu va manzil" />
 <meta property="og:description" content="Jizzaxdagi choyxona: menyu, narxlar, xonalar va aloqa ma’lumotlari." />
 <meta property="og:image" content="${image}" />
 <meta name="twitter:card" content="summary_large_image" />

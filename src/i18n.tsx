@@ -35,11 +35,11 @@ export const translations = {
       "Galereya",
       "Aloqa",
     ],
-    brand: "O‘ktam ota choyxonasi",
-    tag: "O‘KTAM OTA CHOYXONASI",
+    brand: "O‘ktam bobo choyxonasi",
+    tag: "O‘KTAM BOBO CHOYXONASI",
     heroTitle: "Yaqinlaringiz bilan shinam davralar uchun",
     heroText:
-      "Jizzaxdagi O‘ktam ota choyxonasida sizni shinam xonalar va qulay muhit kutadi.",
+      "Jizzaxdagi O‘ktam bobo choyxonasida sizni shinam xonalar va qulay muhit kutadi.",
     call: "Qo‘ng‘iroq qilish",
     seeRooms: "Xonalar bilan tanishish",
     stats: ["20 ta xona", "10 kishilik", "Konditsioner"],
@@ -50,7 +50,7 @@ export const translations = {
     ],
     aboutTitle: "Biz haqimizda",
     aboutText:
-      "O‘ktam ota choyxonasi — Jizzaxda yaqinlaringiz bilan bir dasturxon atrofida jam bo‘lish uchun shinam maskan. 20 ta xonamizning har biri 10 kishiga mo‘ljallangan.",
+      "O‘ktam bobo choyxonasi — Jizzaxda yaqinlaringiz bilan bir dasturxon atrofida jam bo‘lish uchun shinam maskan. 20 ta xonamizning har biri 10 kishiga mo‘ljallangan.",
     aboutText2:
       "Shinam mebellar va konditsioner suhbat hamda birga o‘tkaziladigan vaqtni yanada qulay qiladi.",
     more: "Xonalar bilan tanishish",
@@ -148,11 +148,11 @@ export const translations = {
     viewGallery: "Посмотреть галерею",
 
     nav: ["Главная", "О нас", "Комнаты", "Меню", "Галерея", "Контакты"],
-    brand: "Чайхана O‘ktam ota",
-    tag: "ЧАЙХАНА O‘KTAM OTA",
+    brand: "Чайхана O‘ktam bobo",
+    tag: "ЧАЙХАНА O‘KTAM BOBO",
     heroTitle: "Уютное место для тёплых встреч",
     heroText:
-      "В чайхане O‘ktam ota в Джизаке вас ждут уютные комнаты и комфортная атмосфера.",
+      "В чайхане O‘ktam bobo в Джизаке вас ждут уютные комнаты и комфортная атмосфера.",
     call: "Позвонить",
     seeRooms: "Посмотреть комнаты",
     decorative: "Декоративное изображение. Не является фотографией чайханы.",
@@ -164,7 +164,7 @@ export const translations = {
     ],
     aboutTitle: "О нас",
     aboutText:
-      "Чайхана O‘ktam ota — уютное место в Джизаке, где можно собраться с близкими за одним столом. У нас 20 комнат, каждая рассчитана на 10 человек.",
+      "Чайхана O‘ktam bobo — уютное место в Джизаке, где можно собраться с близкими за одним столом. У нас 20 комнат, каждая рассчитана на 10 человек.",
     aboutText2:
       "Удобная мебель и кондиционер делают общение и время вместе ещё комфортнее.",
     more: "Посмотреть комнаты",
@@ -261,11 +261,11 @@ export const translations = {
     viewGallery: "View gallery",
 
     nav: ["Home", "About us", "Rooms", "Menu", "Gallery", "Contact"],
-    brand: "O‘ktam ota teahouse",
-    tag: "O‘KTAM OTA TEAHOUSE",
+    brand: "O‘ktam bobo teahouse",
+    tag: "O‘KTAM BOBO TEAHOUSE",
     heroTitle: "A cosy place for warm gatherings",
     heroText:
-      "Enjoy comfortable rooms and a welcoming atmosphere at O‘ktam ota teahouse in Jizzakh.",
+      "Enjoy comfortable rooms and a welcoming atmosphere at O‘ktam bobo teahouse in Jizzakh.",
     call: "Call us",
     seeRooms: "Explore the rooms",
     decorative:
@@ -278,7 +278,7 @@ export const translations = {
     ],
     aboutTitle: "About us",
     aboutText:
-      "O‘ktam ota teahouse is a cosy place in Jizzakh to gather with loved ones around one table. We have 20 rooms, each accommodating 10 guests.",
+      "O‘ktam bobo teahouse is a cosy place in Jizzakh to gather with loved ones around one table. We have 20 rooms, each accommodating 10 guests.",
     aboutText2:
       "Comfortable furniture and air conditioning make conversations and time together more relaxing.",
     more: "Explore the rooms",

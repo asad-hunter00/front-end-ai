@@ -870,7 +870,7 @@ function Login() {
         <Preferences />
       </div>
       <form onSubmit={submit}>
-        <span className="admin-kicker">O‘KTAM OTA · BOSHQARUV</span>
+        <span className="admin-kicker">O‘KTAM BOBO · BOSHQARUV</span>
         <h1>Administrator kirishi</h1>
         <p>Supabase’da yaratilgan admin hisobingizdan foydalaning.</p>
         {!API_BASE && (
@@ -928,7 +928,7 @@ function Layout() {
     <div className="admin-layout">
       <aside>
         <Link className="admin-brand" to="/admin">
-          O‘ktam ota<span>ADMIN PANEL</span>
+          O‘ktam bobo<span>ADMIN PANEL</span>
         </Link>
         <nav>
           <NavLink end to="/admin">
